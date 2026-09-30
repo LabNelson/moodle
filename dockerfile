@@ -5,7 +5,7 @@ FROM moodlehq/moodle-php-apache:8.3-bookworm
 ARG MOODLE_VERSION
 
 LABEL org.opencontainers.image.title="Moodle"
-LABEL org.opencontainers.image.source="https://github.com/LabNelson/moodle"
+LABEL org.opencontainers.image.source="https://github.com/labnelson/moodle"
 
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
