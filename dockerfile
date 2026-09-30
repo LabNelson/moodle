@@ -1,10 +1,10 @@
 FROM moodlehq/moodle-php-apache:8.3-bookworm
 
-ARG MOODLE_VERSION=v5.2.3
+ARG MOODLE_VERSION=5.2.3
 
 RUN apt-get update \
     && apt-get install -y --no-install-recommends git \
-    && git clone --depth 1 --branch ${MOODLE_VERSION} \
+    && git clone --depth 1 --branch v${MOODLE_VERSION} \
         https://github.com/moodle/moodle.git \
         /var/www/html \
     && apt-get purge -y --auto-remove git \
