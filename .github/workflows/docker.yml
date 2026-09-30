@@ -14,7 +14,7 @@ on:
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: $labnelson/moodle
+  IMAGE_NAME: labnelson/moodle
 
 jobs:
   docker:
